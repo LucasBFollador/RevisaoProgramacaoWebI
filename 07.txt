@@ -1,0 +1,5 @@
+Visualmente, trará isto:
+Link 1 --aqui é o INDEX
+Google --link para o Google.com
+
+Yahoo --link para o Yahoo.com
