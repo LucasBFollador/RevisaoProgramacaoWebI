@@ -4,7 +4,7 @@
     <title>Formulário de Login</title>
 </head>
 <body>
-    <table>
+    <table border="1">
         <form action="*" method="post">
             <tr>
                 <td><label for="usuario">Usuário:</label></td>
@@ -14,8 +14,10 @@
                 <td><input type="submit" value="Enviar"></td>
             </tr>
             <tr>
-                <td><label for="lembrar">Lembrar Usuário e Senha:</label></td>
-                <td><input type="checkbox" id="lembrar" name="lembrar"></td>
+                <td colspan="5">
+                    <input type="checkbox" id="lembrar" name="lembrar">
+                    <label for="lembrar">Lembrar Usuário e Senha</label>
+                </td>
             </tr>
         </form>
     </table>
