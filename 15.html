@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagens com Legendas</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start; /* Alinha os itens ao topo */
+            margin-bottom: 5px; /* Espaçamento vertical entre os containers */
+        }
+
+        .image {
+            width: 100px; /* Largura padrão das imagens */
+            margin-right: 10px; /* Espaçamento entre imagens e legendas */
+        }
+
+        .caption {
+            flex: 1;
+        }
+
+        .image.link-100 {
+            width: 100px; /* Largura específica para a imagem 4 */
+        }
+
+        .image.link-50 {
+            width: 50px; /* Largura específica para a imagem 5 */
+        }
+    </style>
+</head>
+<body>
+    <h4>Nome, Nº e Turma dos Integrantes</h4>
+    <hr>
+    <div class="container">
+        <img class="image" src="https://1.bp.blogspot.com/-vmsCsb1bohg/Vx0dZiKTOjI/AAAAAAAATfA/sy3mwYsS7BkKKHZYUZX6XSljzL47VPe1ACLcB/s1600/Gatinho%2Blimpando%2Ba%2Bpatinha%2BGif.gif" alt="Imagem 1">
+        <div class="caption">Esta figura está no formato GIF, alinhada pelo TOPO.</div>
+    </div>
+    <div class="container">
+        <img class="image" src="https://th.bing.com/th/id/R.ddc893c1e6e5998139a690d12f7598fa?rik=2pHxHKA%2f4bLSvA&pid=ImgRaw&r=0​.jpg" alt="Imagem 2">
+        <div class="caption">Esta figura está no formato JPG, alinhada pelo MEIO.</div>
+    </div>
+    <div class="container">
+        <img class="image" src="https://th.bing.com/th/id/R.1683c4891e4c84264f9722f08cc962e2?rik=kTZTvYLhc4UpIQ&pid=ImgRaw&r=0​.bmp" alt="Imagem 3">
+        <div class="caption">Esta figura está no formato BMP, alinhada pela BASE.</div>
+    </div>
+    <div class="container">
+        <a href="https://th.bing.com/th/id/R.a5b37c399c5b31e8f5401ebc6b70a43d?rik=YbSFH88dVSQV1g&riu=http%3a%2f%2fwww.techenet.com%2fwp-content%2fuploads%2f2015%2f07%2fgatinho.jpg&ehk=nGxeRCirOLYvzs1EkErwO656CT5brNjd6%2fLI4BdqXSU%3d&risl=&pid=ImgRaw&r=0.jpg" target="_blank">
+            <img class="image link-100" src="https://th.bing.com/th/id/R.a5b37c399c5b31e8f5401ebc6b70a43d?rik=YbSFH88dVSQV1g&riu=http%3a%2f%2fwww.techenet.com%2fwp-content%2fuploads%2f2015%2f07%2fgatinho.jpg&ehk=nGxeRCirOLYvzs1EkErwO656CT5brNjd6%2fLI4BdqXSU%3d&risl=&pid=ImgRaw&r=0.jpg" alt="Imagem 4">
+        </a>
+        <div class="caption">Esta figura é um link, e teve seu comprimento alterado para 100px.</div>
+    </div>
+    <div class="container">
+        <a href="https://i.pinimg.com/564x/b1/da/b3/b1dab30d627b1c7ec858e71289a47c26.jpg" target="_blank">
+            <img class="image link-50" src="https://i.pinimg.com/564x/b1/da/b3/b1dab30d627b1c7ec858e71289a47c26.jpg" alt="Imagem 5">
+        </a>
+        <div class="caption">Esta figura é um link, e teve seu comprimento alterado para 50px.</div>
+    </div>
+    <p>Obs.: Repare que, alterando uma medida apenas, a outra se ajusta proporcionalmente.
+</body>
+</html>
